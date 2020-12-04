@@ -160,7 +160,7 @@ if __name__ == '__main__':
 	conf = json.load(f);
 	algo = globals()[scheduling_algo];	
 
-	conf['workers'] = sorted(conf['workers'], key = lambda x: x['worker_id'])
+	# conf['workers'] = sorted(conf['workers'], key = lambda x: x['worker_id'])
 
 	
 	lock_mr = Lock();
